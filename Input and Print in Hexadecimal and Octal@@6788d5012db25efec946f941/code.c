@@ -7,6 +7,8 @@ int main()
     printf("Hexadecimal: %X",a);
     printf("Octal:%o",a);
     printf("Hexadecimal: %X",b);
+    printf("Octal: %o",b);
+  
         return 0;
 
     }
