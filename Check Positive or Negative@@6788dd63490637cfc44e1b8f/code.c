@@ -10,6 +10,7 @@ int main(){
     }
     else
         printf("zero");
+}
 
     
 }
