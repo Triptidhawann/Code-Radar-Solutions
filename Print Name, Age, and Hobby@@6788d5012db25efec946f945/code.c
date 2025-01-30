@@ -5,8 +5,8 @@ char a[100];
 char c[100];
 int b;
 scanf("%s",a);
-scanf("%s",c);
-scanf("%d",&b)
+scanf("%d",&b);
+scanf("%s",c)
 printf("Name: %s\n",a);
 printf("Age: %d\n",b);
 printf("Hobby: %s\n",c);
