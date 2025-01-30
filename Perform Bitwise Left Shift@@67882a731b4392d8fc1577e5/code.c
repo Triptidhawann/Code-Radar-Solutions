@@ -5,6 +5,6 @@ int main()
     int b;
     int result;
     scanf("%d %d " &a , &b);
-    result = a<<b;
-    printf("%d", result);
+    result = (a<<b);
+    printf("%d\n", result);
 }
