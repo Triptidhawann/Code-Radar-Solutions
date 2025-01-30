@@ -8,7 +8,6 @@ int main()
        printf(a);
     }
     else 
-    printf(b);
-        
-    
+       printf(b);
+
 }
