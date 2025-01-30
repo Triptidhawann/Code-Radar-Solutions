@@ -8,7 +8,7 @@ int main()
        printf("%d\n",a);
     }
     else{
-        printf("%d\n",b)
+        printf("%d\n",b);
     }
     return 0;
 
