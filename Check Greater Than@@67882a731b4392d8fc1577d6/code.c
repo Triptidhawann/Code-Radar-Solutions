@@ -2,7 +2,10 @@
 int main(){
  int a,b,c;
  scanf("%d %d",&a,&b);
-  c = a>b;
-  printf("True\n",c :"False\n",c)
+ if (a>b){
+    printf("True\n");
+ }
+ else:
+ printf("False");
 
-}
+ 
