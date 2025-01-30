@@ -10,5 +10,5 @@ int main()
         printf("Negative\n");
     }
     else
-        printf("zero\n");
+        printf("Zero\n");
 }
