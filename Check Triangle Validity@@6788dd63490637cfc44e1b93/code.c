@@ -5,12 +5,12 @@ int main()
     int b;
     int c;
     scanf("%d %d %d", &a , &b,&c);
-    if (a + b <= c){
-        printf("Valid\n");
-    }
-    else{
-        printf("Invalid\n");
-    } 
+    // if (a + b <= c){
+    //     printf("Valid\n");
+    // }
+    // else{
+    //     printf("Invalid\n");
+    // } 
 
     
 }
