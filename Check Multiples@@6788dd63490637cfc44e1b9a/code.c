@@ -6,7 +6,7 @@ int main(){
     if (a/b==0){
         printf("Yes\n");
     }
-    else{
+    else if (a/b !=0){
         printf("No");
     }
     
