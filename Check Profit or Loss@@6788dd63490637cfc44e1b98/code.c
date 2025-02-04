@@ -6,7 +6,7 @@ int main(){
         printf("Profit\n");
     }
     else if (a<b){
-        printf("Loss");
+        printf("Loss\n");
     }
     else if (a==b){
         printf("No Profit No Loss");
