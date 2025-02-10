@@ -1,3 +1,4 @@
+#include <stdio.h>
 int isprime(int a){
     int is_prime=0;
     if(a==0 || a==1){
