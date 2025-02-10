@@ -17,10 +17,10 @@ int main(){
     int a;
     scanf("%d",&a);
     if(isprime(a)==0){
-        printf("Prime");
+        printf("1");
     }
     else{
-        printf("Not Prime");
+        printf("0");
     }
 return 0;
 }
