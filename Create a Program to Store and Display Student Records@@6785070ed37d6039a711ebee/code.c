@@ -10,13 +10,13 @@ struct student stud[1000];
 int n;
 scanf("%d",&n);
 for(int i=0;i<n;i++){
-    scanf("%d",&stud[i].rollno);
-    scanf("%s",&stud[i].name);
-    scanf("%f",&stud[i].attendence);
+    scanf("%d\n",&stud[i].rollno);
+    scanf("%s\n",&stud[i].name);
+    scanf("%f\n",&stud[i].attendence);
 }
 for(int i=0;i<n;i++){
     printf("Roll Number: %d",stud[i].rollno);
-    printf("\nName: %s\n",stud[i].name);
+    printf("Name: %s\n",stud[i].name);
     printf("Marks: %.2f\n",stud[i].attendence);
 }
 return 0;
