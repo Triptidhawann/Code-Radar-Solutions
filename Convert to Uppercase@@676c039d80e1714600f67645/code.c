@@ -14,4 +14,4 @@ int main(){
         str1[index] = '\0';
     }
     printf("%s",str1);
-}.
+}
