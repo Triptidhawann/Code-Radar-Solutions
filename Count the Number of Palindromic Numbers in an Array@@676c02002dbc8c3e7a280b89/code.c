@@ -1,14 +1,31 @@
 #include <stdio.h>
 #include <string.h>
-int main(){
-    char str[100];
-    scanf("%s",str);
-    char ch;
-    scanf(" %c",&ch);
-    for(int i=0; i<strlen(str);i++){
-        if(str[i]=='a'|| str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A'|| str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U'){
-            str[i]=ch;
+#include <ctype.h>
+#include <stdbool.h>
+bool checkPangram(char *s) {
+
+    for(char ch = 'a'; ch <= 'z'; ch++) {
+        bool found = false;
+
+        for(int i = 0; i < strlen(s); i++) {
+            if(ch == tolower(s[i])) {
+                found = true;
+                break;
+            }
         }
+        if(found == false)
+            return false;
     }
-    printf("%s",str);
+    return true;
+}
+int main(){
+    char s[100];
+    fgets(s, sizeof(s), stdin);
+
+    if(checkPangram(s)){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
 }
