@@ -8,7 +8,7 @@ int main() {
     char mostFrequent;
 
    
-    scanf("%s", str); 
+    scanf("%s", &str); 
 
     
     for (i = 0; str[i] != '\0'; i++) {
