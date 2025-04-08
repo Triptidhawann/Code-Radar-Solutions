@@ -21,10 +21,10 @@ int main() {
 
   
     for (i = k; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);
     }
     for (i = 0; i < k; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);
     }
     return 0;
 }
