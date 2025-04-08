@@ -1,4 +1,4 @@
-#include <stdio.h>
+#inlude <stdio.h>
 int main(){
     int n,i,j;
     scanf("%c",&n);
