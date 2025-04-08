@@ -7,7 +7,7 @@ int main() {
     int i, max = 0;
     char mostFrequent;
 
-   ;
+   
     fgets(str, sizeof(str), stdin);
 
    
