@@ -3,18 +3,16 @@
 
 int main() {
     char str[1000];
-    int freq[256] = {0};  
+    int freq[256] = {0};
     int i, max = 0;
     char mostFrequent;
 
    
-    fgets(str, sizeof(str), stdin);
+    scanf("%s", str); 
 
-   
+    
     for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] != ' ' && str[i] != '\n') {
-            freq[(unsigned char)str[i]]++;
-        }
+        freq[(unsigned char)str[i]]++;
     }
 
     
@@ -25,8 +23,9 @@ int main() {
         }
     }
 
-    printf("%c", mostFrequent);
+    printf(%c", mostFrequent);
     printf("%d", max);
 
     return 0;
 }
+
