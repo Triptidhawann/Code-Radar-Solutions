@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    printf(""%c", mostFrequent);
+    printf("%c", mostFrequent);
     printf("%d", max);
 
     return 0;
