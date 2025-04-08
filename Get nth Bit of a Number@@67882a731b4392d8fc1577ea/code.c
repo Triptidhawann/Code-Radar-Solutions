@@ -13,9 +13,9 @@ int main() {
     int mask = 1 << n;
 
     if (num & mask)
-        printf("%d", num);
+        printf("1");
     else
-        printf("%d" ,num);
+        printf("0");
 
     return 0;
 }
