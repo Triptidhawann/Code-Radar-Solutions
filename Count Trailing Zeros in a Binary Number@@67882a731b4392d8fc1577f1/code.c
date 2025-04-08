@@ -16,7 +16,7 @@ int main() {
         num = num >> 1;
     }
 
-    printf(" %d", count);
+    printf("%d", count);
 
     return 0;
 }
