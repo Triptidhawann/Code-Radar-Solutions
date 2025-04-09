@@ -23,7 +23,7 @@ int main() {
     // Calculate and print median
     if (n % 2 == 1) {
         // Odd number of elements
-        printf("Median: %d\n", arr[n / 2]);
+        printf("%d\n", arr[n / 2]);
     } else {
         // Even number of elements
         float median = (arr[n / 2 - 1] + arr[n / 2]) / 2.0;
