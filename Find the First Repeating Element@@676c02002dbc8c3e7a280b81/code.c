@@ -25,7 +25,7 @@ int main() {
     }
 
     if (!found) {
-        printf("No repeating elements found.\n");
+        printf("-1\n");
     }
 
     return 0;
