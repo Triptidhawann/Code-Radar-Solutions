@@ -27,7 +27,7 @@ int main() {
     } else {
         // Even number of elements
         float median = (arr[n / 2 - 1] + arr[n / 2]) / 2.0;
-        printf("Median: %d\n", median);
+        printf("%d\n", median);
     }
 
     return 0;
