@@ -1,35 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-// Comparison function for qsort
-int compare(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
-}
 
 int main() {
     int n;
-   
+  
     scanf("%d", &n);
+
+    if(n < 2) {
+        printf("-1");  // Not enough elements to form a pair
+        return 0;
+    }
 
     int arr[n];
    
-    for (int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Sort the array
-    qsort(arr, n, sizeof(int), compare);
+    int maxProduct = arr[0] * arr[1];
 
-    // Calculate and print median
-    if (n % 2 == 1) {
-        // Odd number of elements
-        printf("%d\n", arr[n / 2]);
-    } else {
-        // Even number of elements
-        float median = (arr[n / 2 - 1] + arr[n / 2]) / 2.0;
-        printf("%d\n", median);
+    for(int i = 0; i < n - 1; i++) {
+        for(int j = i + 1; j < n; j++) {
+            int product = arr[i] * arr[j];
+            if(product > maxProduct) {
+                maxProduct = product;
+            }
+        }
     }
 
+    printf("%d\n", maxProduct);
     return 0;
 }
+
 
