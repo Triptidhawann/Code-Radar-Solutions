@@ -40,7 +40,7 @@ int main() {
     }
 
     if (!found) {
-        printf("No pairs found.\n");
+        
     }
 
     return 0;
