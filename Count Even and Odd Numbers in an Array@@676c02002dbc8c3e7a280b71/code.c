@@ -26,8 +26,8 @@ int main() {
     }
 
     // Output the counts
-     printf("Number of odd elements: %d\n", oddCount);
-    printf("Number of even elements: %d\n", evenCount);
+     printf("%d", oddCount);
+    printf("%d", evenCount);
    
 
     return 0;
