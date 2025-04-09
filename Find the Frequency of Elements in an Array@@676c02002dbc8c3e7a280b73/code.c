@@ -33,7 +33,7 @@ int main() {
     
     for (i = 0; i < n; i++) {
         if (freq[i] != 0) {
-            printf("%d",freq[i]);
+            printf("%d \n",freq[i]);
         }
     }
 
