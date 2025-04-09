@@ -32,7 +32,7 @@ int main() {
     }
 
     // Output rotated array
-    printf("%d", k);
+  
     for (i = 0; i < n; i++) {
         printf("%d ", rotated[i]);
     }
