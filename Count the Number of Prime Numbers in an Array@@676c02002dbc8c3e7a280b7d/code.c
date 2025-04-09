@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdbool.h>
 
 // Function to check if a number is prime
@@ -7,7 +6,7 @@ bool isPrime(int num) {
     if (num <= 1)
         return false;
 
-    for (int i = 2; i <= sqrt(num); i++) {
+    for (int i = 2; i * i <= num; i++) {
         if (num % i == 0)
             return false;
     }
@@ -30,7 +29,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Count primes
+    // Count prime numbers
     for (i = 0; i < n; i++) {
         if (isPrime(arr[i])) {
             count++;
