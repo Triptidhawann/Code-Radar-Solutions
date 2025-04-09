@@ -16,7 +16,7 @@ int main() {
  
     scanf("%d", &target);
 
-    printf("%d:\n", target);
+  
     int found = 0;
 
     // Check all pairs
