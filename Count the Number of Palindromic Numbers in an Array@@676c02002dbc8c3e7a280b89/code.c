@@ -1,31 +1,41 @@
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdbool.h>
-bool checkPangram(char *s) {
 
-    for(char ch = 'a'; ch <= 'z'; ch++) {
-        bool found = false;
+// Function to check if a number is palindromic
+int isPalindrome(int num) {
+    int original = num, reversed = 0;
 
-        for(int i = 0; i < strlen(s); i++) {
-            if(ch == tolower(s[i])) {
-                found = true;
-                break;
-            }
-        }
-        if(found == false)
-            return false;
+    while (num > 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = num / 10;
     }
-    return true;
+
+    return original == reversed;
 }
-int main(){
-    char s[100];
-    fgets(s, sizeof(s), stdin);
 
-    if(checkPangram(s)){
-        printf("Yes");
+int main() {
+    int n, i, count = 0;
+
+    
+    scanf("%d", &n);
+
+    int arr[n];
+
+    // Input array elements
+ 
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    else{
-        printf("No");
+
+    // Count palindromic numbers
+    for (i = 0; i < n; i++) {
+        if (isPalindrome(arr[i])) {
+            count++;
+        }
     }
+
+    // Output result
+    printf("%d\n", count);
+
+    return 0;
 }
