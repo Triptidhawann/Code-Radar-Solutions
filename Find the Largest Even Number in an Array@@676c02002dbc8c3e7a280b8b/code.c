@@ -25,7 +25,7 @@ int main() {
 
     // Output the result
     if (maxEven == -1) {
-        printf("-1\n");
+        printf("-2\n");
     } else {
         printf("%d\n", maxEven);
     }
