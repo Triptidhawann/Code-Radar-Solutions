@@ -32,7 +32,7 @@ int main() {
                     }
                 }
                 if (!duplicate) {
-                    printf("(%d, %d)\n", arr[i], arr[j]);
+                    printf("%d %d\n", arr[i], arr[j]);
                     found = 1;
                 }
             }
