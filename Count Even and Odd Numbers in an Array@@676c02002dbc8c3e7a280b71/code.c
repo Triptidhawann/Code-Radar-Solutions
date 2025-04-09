@@ -26,8 +26,9 @@ int main() {
     }
 
     // Output the counts
-     printf("%d ", oddCount);
+     
     printf("%d ", evenCount);
+    printf("%d ", oddCount);
    
 
     return 0;
